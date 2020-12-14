@@ -17,7 +17,7 @@ cd ~/
 git clone https://github.com/KuringMIN/wallpapers ~/Pictures
 cd ~/
 
-sudo pamcan -S dmenu ranger fzf feh picom xorg-apps xorg-xinit xorg-server
+sudo pamcan -S dmenu neofetch chromium ranger fzf feh picom xorg-apps xorg-xinit xorg-server
 
 yay -S ttf-linux-libertine ttf-inconsolata ttf-joypixels ttf-twemoji-color noto-fonts-emoji ttf-liberation ttf-droid wqy-bitmapfont wqy-microhei wqy-microhei-lite wqy-zenhei adobe-source-han-mono-cn-fonts adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts otf-nerd-fonts-fira-code nerd-fonts-source-code-pro
 
