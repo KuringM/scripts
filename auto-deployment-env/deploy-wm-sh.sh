@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 cd ~/
-mkdir ~/.config
 mkdir ~/Github ~/prog ~/Pictures ~/Videos ~/Desktop ~/Documents ~/Downloads ~/Music ~/.zim ~/.config
 git clone https://github.com/KuringMIN/scripts ~/scripts
 git clone https://github.com/KuringMIN/.config ~/config
