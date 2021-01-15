@@ -19,7 +19,7 @@ git clone https://github.com/KuringMIN/wallpapers ~/Pictures
 cd ~/
 
 # install some necessary software
-sudo pamcan -S dmenu neofetch chromium ranger fzf feh picom xorg-apps xorg-xinit xorg-server zsh networkmanager nm-connection-editor network-manager-applet xfce4-power-manager trayer flameshot alsa-utils screenkey
+sudo pamcan -S dmenu neofetch chromium ranger fzf feh picom xorg-apps xorg-xinit xorg-server zsh networkmanager nm-connection-editor network-manager-applet xfce4-power-manager flameshot alsa-utils screenkey nautilus
 
 # install yay for archlinux
 git clone https://aur.archlinux.org/yay.git ~/Github

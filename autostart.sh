@@ -13,3 +13,4 @@ xfce4-power-manager &
 /bin/bash ~/scripts/run-mailsync.sh &
 ~/scripts/autostart_wait.sh &
 fcitx5 &
+flameshot &
