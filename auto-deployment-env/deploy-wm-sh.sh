@@ -2,7 +2,7 @@
 
 # create directory
 cd ~/
-mkdir ~/Github ~/prog ~/Pictures ~/Videos ~/Desktop ~/Documents ~/Downloads ~/Music ~/.zim ~/.config
+mkdir ~/Github ~/prog ~/Pictures ~/Videos ~/Desktop ~/Documents ~/Downloads ~/Music ~/.zim ~/.config ~/Test
 
 # clone config st dwn wallpapers and install dwm st
 git clone https://github.com/KuringMIN/.config ~/config
@@ -19,7 +19,7 @@ git clone https://github.com/KuringMIN/wallpapers ~/Pictures
 cd ~/
 
 # install some necessary software
-sudo pamcan -S dmenu neofetch chromium ranger fzf feh picom xorg-apps xorg-xinit xorg-server zsh networkmanager nm-connection-editor network-manager-applet xfce4-power-manager flameshot alsa-utils screenkey nautilus
+sudo pamcan -S dmenu neofetch chromium ranger w3m fzf feh picom xorg-apps xorg-xinit xorg-server zsh networkmanager nm-connection-editor network-manager-applet xfce4-power-manager flameshot alsa-utils screenkey nautilus nerd-fonts
 
 # install yay for archlinux
 git clone https://aur.archlinux.org/yay.git ~/Github
