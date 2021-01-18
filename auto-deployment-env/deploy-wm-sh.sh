@@ -19,7 +19,7 @@ git clone https://github.com/KuringMIN/wallpapers ~/Pictures
 cd ~/
 
 # install some necessary software
-sudo pamcan -S dmenu neofetch chromium ranger w3m fzf feh picom xorg-apps xorg-xinit xorg-server zsh networkmanager nm-connection-editor network-manager-applet xfce4-power-manager flameshot alsa-utils screenkey nautilus nerd-fonts
+sudo pamcan -S dmenu neofetch chromium ranger pandoc texlive-most youtube-dl python-pdftotext perl-image-exiftool mupdf w3m fzf feh picom xorg-apps xorg-xinit xorg-server zsh networkmanager nm-connection-editor network-manager-applet xfce4-power-manager flameshot alsa-utils screenkey nautilus nerd-fonts
 
 # install yay for archlinux
 git clone https://aur.archlinux.org/yay.git ~/Github
@@ -31,7 +31,7 @@ cd ~/
 yay --aururl "https://aur.tuna.tsinghua.edu.cn" --save
 
 # install some necessary fonts and software
-yay -S ttf-linux-libertine ttf-inconsolata ttf-joypixels ttf-twemoji-color noto-fonts-emoji ttf-liberation ttf-droid wqy-bitmapfont wqy-microhei wqy-microhei-lite wqy-zenhei adobe-source-han-mono-cn-fonts adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts otf-nerd-fonts-fira-code nerd-fonts-source-code-pro acpitool
+yay -S ttf-linux-libertine ttf-inconsolata ttf-joypixels ttf-twemoji-color noto-fonts-emoji ttf-liberation ttf-droid wqy-bitmapfont wqy-microhei wqy-microhei-lite wqy-zenhei adobe-source-han-mono-cn-fonts adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts otf-nerd-fonts-fira-code nerd-fonts-source-code-pro acpitool 
 
 # config zsh
 sudo chsh -s /usr/bin/zsh
