@@ -11,10 +11,10 @@ sudo pacman -S python python2 python-pip python2-pip nodejs npm yarn ruby the_si
 pip install pynvim debugpy ueberzug
 pip2 install pynvim
 
-sudo nmp install -g neovim
+sudo npm install -g neovim
 yarn global add neovim
 gem install neovim
 
 # markdonw support
 pip install --user smdv
-sudo nmp install -g instant-markdown-d
+sudo npm install -g instant-markdown-d
