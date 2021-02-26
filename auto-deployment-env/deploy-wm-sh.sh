@@ -5,8 +5,7 @@ cd ~/
 mkdir ~/Github ~/prog ~/Pictures ~/Videos ~/Desktop ~/Documents ~/Downloads ~/Music ~/.zim ~/.config
 
 # clone config st dwn wallpapers and install dwm st
-git clone https://github.com/KuringMIN/.config ~/config
-cp -r ~/config/* ~/.config
+git clone https://github.com/KuringMIN/.config ~/.config
 git clone https://github.com/KuringMIN/st ~/prog/st
 cd ~/prog/st
 sudo make clean install
@@ -16,6 +15,12 @@ cd ~/prog/dwm
 sudo make clean install
 echo "Finishing install dwn st!!!"
 cd ~/
+
+echo "export LANG=zh_CN.UTF-8" >> ~/.xinitrc
+echo "export LANGUAGE=zh_CN:en_US" >> ~/.xinitrc
+echo "exec dwm" >> ~/.xinitrc
+
+
 git clone https://github.com/KuringMIN/wallpapers ~/Pictures
 cd ~/
 
