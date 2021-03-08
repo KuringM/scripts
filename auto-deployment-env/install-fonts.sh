@@ -3,7 +3,7 @@
 # Note
 sudo pacman -S noto-fonts
 
-# Emoji
+# Emoji icons
 yay -S ttf-linux-libertine ttf-inconsolata ttf-joypixels ttf-twemoji-color noto-fonts-emoji ttf-liberation ttf-droid 
 
 # Chinese
