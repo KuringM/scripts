@@ -1,4 +1,11 @@
 #!/bin/bash
 
-feh --recursive --randomize --bg-fill ~/Pictures/wallpapers/Ghibli
-#feh --recursive --randomize --bg-fill ~/Pictures/wallpapers/wallhaven
+# random all
+#feh --recursive --randomize --bg-fill ~/Pictures/wallpapers
+
+# random Ghibli
+#feh --recursive --randomize --bg-fill ~/Pictures/wallpapers/Ghibli
+
+# random Van Gogh
+feh --recursive --randomize --bg-fill ~/Pictures/wallpapers/Van Gogh
+
