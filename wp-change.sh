@@ -7,5 +7,5 @@
 #feh --recursive --randomize --bg-fill ~/Pictures/wallpapers/Ghibli
 
 # random Van Gogh
-feh --recursive --randomize --bg-fill ~/Pictures/wallpapers/Van Gogh
+feh --recursive --randomize --bg-fill ~/Pictures/wallpapers/Van\ Gogh
 
