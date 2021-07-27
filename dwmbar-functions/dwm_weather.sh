@@ -12,9 +12,9 @@ dwm_weather() {
 
     printf "%s" "$SEP1"
     if [ "$IDENTIFIER" = "unicode" ]; then
-        printf "%s" "$(curl -s wttr.in/$LOCATION?format=1)"
+        printf "%s" "$(curl -s wttr.in/$LOCATION?m\&format=%c+%m+%t)"
     else
-        printf "WEA %s" "$(curl -s wttr.in/$LOCATION?format=1 | grep -o "[0-9].*")"
+        printf "WEA %s" "$(curl -s wttr.in/$LOCATION?m\&format=%c+%m+%t | grep -o "[0-9].*")"
     fi
     printf "%s\n" "$SEP2"
 }

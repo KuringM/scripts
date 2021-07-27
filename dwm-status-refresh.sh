@@ -120,7 +120,8 @@ print_bat(){
 }
 
 print_date(){
-	date '+%Y年%m月%d日 %H:%M'
+	#date '+%Y-%m-%d %a %H:%M'
+	date '+%a %m-%d %H:%M'
 }
 
 show_record(){
@@ -135,6 +136,7 @@ LOC=$(readlink -f "$0")
 DIR=$(dirname "$LOC")
 export IDENTIFIER="unicode"
 
+#dwmbar-functions
 #. "$DIR/dwmbar-functions/dwm_transmission.sh"
 #. "$DIR/dwmbar-functions/dwm_cmus.sh"
 #. "$DIR/dwmbar-functions/dwm_resources.sh"
@@ -143,12 +145,21 @@ export IDENTIFIER="unicode"
 . "$DIR/dwmbar-functions/dwm_backlight.sh"
 . "$DIR/dwmbar-functions/dwm_alsa.sh"
 #. "$DIR/dwmbar-functions/dwm_pulse.sh"
-. "$DIR/dwmbar-functions/dwm_weather.sh"
+#. "$DIR/dwmbar-functions/dwm_weather.sh"
 #. "$DIR/dwmbar-functions/dwm_vpn.sh"
 #. "$DIR/dwmbar-functions/dwm_network.sh"
 #. "$DIR/dwmbar-functions/dwm_keyboard.sh"
 #. "$DIR/dwmbar-functions/dwm_ccurse.sh"
 #. "$DIR/dwmbar-functions/dwm_date.sh"
+
+#dwmblocks_scripts
+. "$DIR/dwmbar-functions/dwmblocks_scripts/kernel"
+#. "$DIR/dwmbar-functions/dwmblocks_scripts/upt"
+#. "$DIR/dwmbar-functions/dwmblocks_scripts/cpu"
+#. "$DIR/dwmbar-functions/dwmblocks_scripts/memory"
+#. "$DIR/dwmbar-functions/dwmblocks_scripts/volume"
+#. "$DIR/dwmbar-functions/dwmblocks_scripts/clock"
+#. "$DIR/dwmbar-functions/dwmblocks_scripts/bandwidth"
 
 get_bytes
 
@@ -156,8 +167,10 @@ get_bytes
 vel_recv=$(get_velocity $received_bytes $old_received_bytes $now)
 vel_trans=$(get_velocity $transmitted_bytes $old_transmitted_bytes $now)
 
-#xsetroot -name "  💿 $(print_mem)M ⬇️ $vel_recv ⬆️ $vel_trans $(dwm_alsa) [ $(print_bat) ]$(show_record) $(print_date) "
-xsetroot -name "  💿$(print_mem)M ⬇️ $vel_recv ⬆️ $vel_trans $(dwm_alsa) $(dwm_backlight) $(dwm_weather) $(print_date) "
+#xsetroot -name "  💿 $(pr nt_mem)M ⬇️ $vel_recv ⬆️ $vel_trans $(dwm_alsa) [ $(print_bat) ]$(show_record) $(print_date) "
+#xsetroot -name "  💿$(print_mem)M ⬇️ $vel_recv ⬆️ $vel_trans $(dwm_alsa) $(dwm_backlight) $(dwm_weather) $(print_date) "
+#xsetroot -name "$(kernel)⏽ﰬ$vel_recv⏽ﰵ$vel_trans⏽$(cpu)⏽RAM:$(print_mem)M⏽$(dwm_backlight)⏽$(dwm_alsa)⏽$(dwm_weather)⏽$(print_date)"
+xsetroot -name "ﰵ$vel_trans ﰬ$vel_recv $(dwm_backlight) $(dwm_alsa) $(kernel)⏽$(print_date)"
 
 # Update old values to perform new calculations
 old_received_bytes=$received_bytes
