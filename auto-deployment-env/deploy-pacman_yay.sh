@@ -11,5 +11,6 @@ yay --aururl "https://aur.tuna.tsinghua.edu.cn" --save
 
 # set achlinucn on
 sudo echo "[archlinuxcn]" >> /etc/pacman.conf
+sudo echo "SigLevel = Optional TrustAll" >> /etc/pacman.conf
 sudo echo "Server = https://mirrors.ustc.edu.cn/archlinuxcn/\$arch" >> /etc/pacman.conf
 sudo echo "Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/\$arch" >> /etc/pacman.conf
