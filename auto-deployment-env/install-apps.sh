@@ -4,7 +4,7 @@
 sudo pacman -S networkmanager nm-connection-editor network-manager-applet xfce4-power-manager acpi acpilight alsa-utils ntfs-3g bc
 
 # For Shell
-sudo pacman -S zsh thefuck w3m fzf neofetch zip unzip htop ripgrep tree tmux duf
+sudo pacman -S zsh thefuck w3m wget fzf neofetch zip unzip htop ripgrep tree tmux duf tldr
 sudo pacman -S ranger pandoc texlive-most youtube-dl python-pdftotext perl-image-exiftool mupdf
 
 # For Display Manager, such as DWM KDE.
