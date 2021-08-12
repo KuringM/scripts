@@ -7,6 +7,7 @@ yay -S update-grub
 # For Shell
 sudo pacman -S zsh thefuck w3m wget fzf neofetch zip unzip htop ripgrep tree tmux duf tldr
 sudo pacman -S ranger pandoc texlive-most youtube-dl python-pdftotext perl-image-exiftool mupdf
+yay -S gotop-git
 
 # For Display Manager, such as DWM KDE.
 sudo pacman -S xorg-apps xorg-xinit xorg-server dmenu feh picom flameshot screenkey nautilus gnome-font-viewer ark
