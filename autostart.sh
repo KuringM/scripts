@@ -1,8 +1,5 @@
 #!/bin/bash
 
-export LANG=zh_CN.UTF-8
-export LANGUAGE=zh_CN:en_US
-
 /bin/bash ~/scripts/dwm-status.sh &
 /bin/bash ~/scripts/wp-autochange.sh &
 #picom -o 0.95 -i 0.88 --detect-rounded-corners --vsync --blur-background-fixed -f -D 5 -c -b
